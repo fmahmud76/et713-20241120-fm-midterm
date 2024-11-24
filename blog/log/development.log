@@ -46,3 +46,1502 @@ Started GET "/assets/controllers/application-3affb389.js" for 146.111.194.26 at 
 Cannot render console from 146.111.194.26! Allowed networks: 127.0.0.0/127.255.255.255, ::1
 Started GET "/assets/controllers/hello_controller-708796bd.js" for 146.111.194.26 at 2024-11-20 20:46:14 +0000
 Cannot render console from 146.111.194.26! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 173.52.88.183 at 2024-11-24 17:47:12 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | GC: 15.7ms)
+Completed 200 OK in 110ms (Views: 51.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.7ms)
+
+
+Started GET "/" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 4.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-bfcdf840.js" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Started GET "/assets/stimulus.min-4b1e420e.js" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-fae85750.js" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 173.52.88.183 at 2024-11-24 17:47:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-11-24 17:50:34.295067', '2024-11-24 17:50:34.295072') RETURNING "key" /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Migrating to CreateArticles (20241124174949)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "articles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241124174949') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /* loading for pp */ LIMIT 11 /*application='Blog'*/[0m
+Started GET "/" for 173.52.88.183 at 2024-11-24 17:54:05 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | GC: 16.8ms)
+Completed 200 OK in 117ms (Views: 61.4ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 16.8ms)
+
+
+Started GET "/" for 173.52.88.183 at 2024-11-24 17:58:14 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 0.3ms)
+Completed 200 OK in 23ms (Views: 9.8ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/" for 173.52.88.183 at 2024-11-24 18:05:24 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (4.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | GC: 0.2ms)
+Completed 200 OK in 44ms (Views: 15.6ms | ActiveRecord: 4.7ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 18:05:26 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 14.6ms | GC: 0.2ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 15.7ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | GC: 0.2ms)
+Completed 200 OK in 37ms (Views: 17.8ms | ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Migrating to CreateComments (20241124185326)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "article_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_3bf61a60d3"
+FOREIGN KEY ("article_id")
+  REFERENCES "articles" ("id")
+) /*application='Blog'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_comments_on_article_id" ON "comments" ("article_id") /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241124185326') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 18:57:13 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 29.6ms | GC: 0.9ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 30.9ms | GC: 0.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | GC: 2.0ms)
+Completed 200 OK in 242ms (Views: 74.0ms | ActiveRecord: 3.4ms (0 queries, 0 cached) | GC: 21.0ms)
+
+
+Started GET "/" for 173.52.88.183 at 2024-11-24 18:57:22 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.4ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | GC: 0.6ms)
+Completed 200 OK in 60ms (Views: 15.7ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 18:57:23 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.8ms | GC: 0.3ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.3ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | GC: 0.3ms)
+Completed 200 OK in 31ms (Views: 15.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 18:58:08 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.0ms | GC: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | GC: 0.3ms)
+Completed 200 OK in 75ms (Views: 28.6ms | ActiveRecord: 2.4ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started POST "/articles" for 173.52.88.183 at 2024-11-24 18:58:11 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"", "body"=>""}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 12.2ms | GC: 0.1ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 12.9ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | GC: 0.1ms)
+Completed 422 Unprocessable Content in 41ms (Views: 17.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:01:12 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 9.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:02:44 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 31.3ms | GC: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 33.7ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | GC: 0.8ms)
+Completed 200 OK in 103ms (Views: 59.9ms | ActiveRecord: 3.7ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:02:47 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 34.3ms | GC: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 94.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 153.4ms | GC: 0.0ms)
+Completed 200 OK in 423ms (Views: 171.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:03:18 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 26.2ms | GC: 0.8ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 92.3ms | GC: 21.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 117.9ms | GC: 22.7ms)
+Completed 200 OK in 320ms (Views: 132.3ms | ActiveRecord: 23.1ms (0 queries, 0 cached) | GC: 23.0ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:05:30 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 49.4ms | GC: 0.6ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 90.4ms | GC: 20.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 123.3ms | GC: 21.7ms)
+Completed 200 OK in 188ms (Views: 128.3ms | ActiveRecord: 1.7ms (0 queries, 0 cached) | GC: 22.0ms)
+
+
+Started GET "/" for 173.52.88.183 at 2024-11-24 19:05:45 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | GC: 0.7ms)
+Completed 200 OK in 35ms (Views: 9.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/" for 173.52.88.183 at 2024-11-24 19:05:48 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 5.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:05:50 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.0ms | GC: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 8.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/articles" for 173.52.88.183 at 2024-11-24 19:06:27 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"rails is awsome", "body"=>"it really is"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:17:in `create'
+  [1m[36mArticle Create (6.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ('rails is awsome', 'it really is', '2024-11-24 19:06:27.311142', '2024-11-24 19:06:27.311142') RETURNING "id" /*action='create',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:17:in `create'
+Redirected to https://e56c7acb32494d6894db180231f98866.vfs.cloud9.us-east-1.amazonaws.com/articles/1
+Completed 302 Found in 57ms (ActiveRecord: 9.5ms (1 query, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:06:27 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 273.3ms | GC: 62.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 275.3ms | GC: 62.9ms)
+Completed 200 OK in 310ms (Views: 275.8ms | ActiveRecord: 1.5ms (2 queries, 0 cached) | GC: 63.3ms)
+
+
+Started POST "/articles/1/comments" for 173.52.88.183 at 2024-11-24 19:06:45 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"commenter"=>"a fellow dev", "body"=>"i agree"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+  [1m[36mComment Create (2.6ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ('a fellow dev', 'i agree', 1, '2024-11-24 19:06:45.855229', '2024-11-24 19:06:45.855229') RETURNING "id" /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+Redirected to https://e56c7acb32494d6894db180231f98866.vfs.cloud9.us-east-1.amazonaws.com/articles/1
+Completed 302 Found in 29ms (ActiveRecord: 3.1ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:06:45 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 5.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 6.8ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/articles/1/edit" for 173.52.88.183 at 2024-11-24 19:06:55 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='edit',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 6.6ms | GC: 0.0ms)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 7.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 12.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started PATCH "/articles/1" for 173.52.88.183 at 2024-11-24 19:07:36 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"Rails is awesome!", "body"=>"it really is. editing first article"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='update',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:31:in `update'
+  [1m[36mArticle Update (2.7ms)[0m  [1m[33mUPDATE "articles" SET "title" = 'Rails is awesome!', "body" = 'it really is. editing first article', "updated_at" = '2024-11-24 19:07:36.074860' WHERE "articles"."id" = 1 /*action='update',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:31:in `update'
+Redirected to https://e56c7acb32494d6894db180231f98866.vfs.cloud9.us-east-1.amazonaws.com/articles/1
+Completed 302 Found in 46ms (ActiveRecord: 3.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:07:36 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 5.4ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.3ms)
+Completed 200 OK in 20ms (Views: 6.8ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/articles/1/comments" for 173.52.88.183 at 2024-11-24 19:07:59 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"commenter"=>"developer", "body"=>"adding a second comment"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+  [1m[36mComment Create (2.7ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ('developer', 'adding a second comment', 1, '2024-11-24 19:07:59.291054', '2024-11-24 19:07:59.291054') RETURNING "id" /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+Redirected to https://e56c7acb32494d6894db180231f98866.vfs.cloud9.us-east-1.amazonaws.com/articles/1
+Completed 302 Found in 23ms (ActiveRecord: 3.0ms (2 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:07:59 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 8.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 11.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Migrating to AddStatusToArticles (20241124191206)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "articles" ADD "status" varchar /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241124191206') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+Migrating to AddStatusToComments (20241124191208)
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (5.2ms)[0m  [1m[35mALTER TABLE "comments" ADD "status" varchar /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241124191208') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:23:00 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 28.1ms | GC: 2.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | GC: 2.0ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 4.1ms (2 queries, 0 cached) | GC: 18.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/favicon.ico" for 173.52.88.183 at 2024-11-24 19:23:03 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:11 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 73.4ms | GC: 2.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 73.9ms | GC: 2.2ms)
+Completed 500 Internal Server Error in 261ms (ActiveRecord: 14.7ms (2 queries, 0 cached) | GC: 23.3ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/1/edit" for 173.52.88.183 at 2024-11-24 19:31:18 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='edit',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 26.9ms | GC: 0.3ms)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 31.1ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | GC: 0.3ms)
+Completed 200 OK in 70ms (Views: 42.8ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:22 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:31:24 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id])
+Caused by: ActionController::UrlGenerationError (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id])
+
+Information for: ActionView::Template::Error (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id]):
+    1: <%= form_with model: [ article, article.comments.build ] do |form| %>
+    2:   <p>
+    3:     <%= form.label :commenter %><br>
+    4:     <%= form.text_field :commenter %>
+  
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+
+Information for cause: ActionController::UrlGenerationError (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id]):
+  
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:26 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:28 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 6.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:33 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:36 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/" for 173.52.88.183 at 2024-11-24 19:31:43 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = 'public' /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:46 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 5.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:31:47 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id])
+Caused by: ActionController::UrlGenerationError (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id])
+
+Information for: ActionView::Template::Error (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id]):
+    1: <%= form_with model: [ article, article.comments.build ] do |form| %>
+    2:   <p>
+    3:     <%= form.label :commenter %><br>
+    4:     <%= form.text_field :commenter %>
+  
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+
+Information for cause: ActionController::UrlGenerationError (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id]):
+  
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:31:48 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 11.5ms | GC: 1.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | GC: 1.0ms)
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 6.1ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/new" for 173.52.88.183 at 2024-11-24 19:31:49 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.4ms | GC: 0.2ms)
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.7ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id])
+Caused by: ActionController::UrlGenerationError (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id])
+
+Information for: ActionView::Template::Error (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id]):
+    1: <%= form_with model: [ article, article.comments.build ] do |form| %>
+    2:   <p>
+    3:     <%= form.label :commenter %><br>
+    4:     <%= form.text_field :commenter %>
+  
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+
+Information for cause: ActionController::UrlGenerationError (No route matches {:action=>"index", :article_id=>nil, :controller=>"comments"}, missing required keys: [:article_id]):
+  
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+Started GET "/" for 173.52.88.183 at 2024-11-24 19:32:04 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = 'public' /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /*action='index',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 15.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | GC: 0.0ms)
+Completed 200 OK in 49ms (Views: 23.0ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:32:06 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:34:18 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 23.1ms | GC: 5.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | GC: 5.8ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.3ms (2 queries, 0 cached) | GC: 5.8ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= form_with model: [ @article, @article.comments.build ] do |form| %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:35:51 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 30.4ms | GC: 1.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | GC: 1.3ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 2.6ms (2 queries, 0 cached) | GC: 18.7ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:38:30 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 31.9ms | GC: 1.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | GC: 1.7ms)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 6.3ms (2 queries, 0 cached) | GC: 20.6ms)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment:</h2>
+    17: <%= render "comments/form", article: @article %>
+  
+app/views/articles/show.html.erb:14
+
+Information for cause: ActionView::MissingTemplate (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/ec2-user/environment/et713-20241120-fm-midterm/blog/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/turbo-rails-2.0.11/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actiontext-8.0.0/app/views"
+  * "/home/ec2-user/.local/share/gem/ruby/gems/actionmailbox-8.0.0/app/views"
+):
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:40:32 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 1.5ms | GC: 0.0ms)
+  Rendered comments/_form.html.erb (Duration: 28.7ms | GC: 0.5ms)
+  Rendered articles/show.html.erb within layouts/application (Duration: 64.7ms | GC: 2.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 86.4ms | GC: 3.4ms)
+Completed 200 OK in 206ms (Views: 87.9ms | ActiveRecord: 4.7ms (2 queries, 0 cached) | GC: 23.2ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:45:21 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 2.3ms | GC: 0.0ms)
+  Rendered comments/_form.html.erb (Duration: 20.1ms | GC: 0.4ms)
+  Rendered articles/show.html.erb within layouts/application (Duration: 52.0ms | GC: 2.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | GC: 3.1ms)
+Completed 200 OK in 185ms (Views: 69.8ms | ActiveRecord: 4.5ms (2 queries, 0 cached) | GC: 20.8ms)
+
+
+Started DELETE "/articles/1/comments/1?_method=delete" for 173.52.88.183 at 2024-11-24 19:45:34 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#destroy as TURBO_STREAM
+  Parameters: {"article_id"=>"1", "id"=>"1"}
+Filter chain halted as #<Proc:0x00007f923a50dad8 /home/ec2-user/.local/share/gem/ruby/gems/actionpack-8.0.0/lib/action_controller/metal/http_authentication.rb:82> rendered or redirected
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:45:38 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 1.1ms | GC: 0.0ms)
+  Rendered comments/_form.html.erb (Duration: 2.4ms | GC: 0.1ms)
+  Rendered articles/show.html.erb within layouts/application (Duration: 8.6ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | GC: 0.4ms)
+Completed 200 OK in 29ms (Views: 15.7ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/articles/1/comments" for 173.52.88.183 at 2024-11-24 19:46:28 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"commenter"=>"Identifier", "body"=>"username: abd\npass: secret"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+Redirected to https://e56c7acb32494d6894db180231f98866.vfs.cloud9.us-east-1.amazonaws.com/articles/1
+Completed 302 Found in 27ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:46:28 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 4.9ms | GC: 1.9ms)
+  Rendered comments/_form.html.erb (Duration: 90.9ms | GC: 49.2ms)
+  Rendered articles/show.html.erb within layouts/application (Duration: 114.4ms | GC: 53.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 116.5ms | GC: 53.7ms)
+Completed 200 OK in 149ms (Views: 121.3ms | ActiveRecord: 1.5ms (2 queries, 0 cached) | GC: 59.6ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:46:35 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 4.1ms | GC: 0.0ms)
+  Rendered comments/_form.html.erb (Duration: 5.0ms | GC: 0.0ms)
+  Rendered articles/show.html.erb within layouts/application (Duration: 17.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | GC: 0.5ms)
+Completed 200 OK in 51ms (Views: 23.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 1.2ms)
+
+
+Started POST "/articles/1/comments" for 173.52.88.183 at 2024-11-24 19:46:50 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+Redirected to https://e56c7acb32494d6894db180231f98866.vfs.cloud9.us-east-1.amazonaws.com/articles/1
+Completed 302 Found in 31ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:46:50 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 1.4ms | GC: 0.2ms)
+  Rendered comments/_form.html.erb (Duration: 3.3ms | GC: 0.0ms)
+  Rendered articles/show.html.erb within layouts/application (Duration: 13.7ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | GC: 0.2ms)
+Completed 200 OK in 58ms (Views: 18.6ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/articles/1/comments" for 173.52.88.183 at 2024-11-24 19:46:51 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='create',application='Blog',controller='comments'*/[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+Redirected to https://e56c7acb32494d6894db180231f98866.vfs.cloud9.us-east-1.amazonaws.com/articles/1
+Completed 302 Found in 13ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/articles/1" for 173.52.88.183 at 2024-11-24 19:46:51 +0000
+Cannot render console from 173.52.88.183! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = 1 /*action='show',application='Blog',controller='articles'*/[0m
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 1.1ms | GC: 0.3ms)
+  Rendered comments/_form.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered articles/show.html.erb within layouts/application (Duration: 9.2ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | GC: 0.3ms)
+Completed 200 OK in 26ms (Views: 11.5ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
